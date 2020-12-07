@@ -3,9 +3,9 @@
 Ką ir kaip daryti?
 
 - [x] paanalizuoti dizainą;
-- [] pasiruošti basic failus;
-- [] susikelti į Github;
-- [] Github'e paleisti prieinamą nuorodą;
+- [x] pasiruošti basic failus;
+- [x] susikelti į Github;
+- [x] Github'e paleisti prieinamą nuorodą;
 - [] susikurti projekto aprašą;
 - [] darbo užduočių planavimas su Github projects:
     - [] užduoties aprašymas turi būti kuo detalesnis
