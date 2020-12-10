@@ -67,4 +67,50 @@ main p {
 /* footer */
 footer.container {
     padding-top: 0;
+    text-align: center;
 }
+
+    footer img {
+
+    }
+    footer p {
+        display: inline-block;
+        width: 100%;
+        font-size: 17px;
+        line-height: 25px;
+        color: #fff9;
+    }
+
+        footer p a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer p > span {
+            padding: 0 10px;
+            position: relative;
+        }
+        footer p > span + span::before  {
+            content: '';
+            display: inline-block;
+            height: 20px;
+            width: 1px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: -2px;
+            transform: translateY(-50%);
+        }
+    
+    @media (max-width: 640px) {
+        footer p > span {
+            display: inline-block;
+            width: 100%;
+        }
+        footer p > span + span::before {
+            width: 15px;
+            height: 1px;
+            top:0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
