@@ -1,4 +1,12 @@
+import {isValidInput} from './isValidInput.js';
 function renderProgressBar(selector, data) {
+    //input validation
+
+
+    isValidInput (selector, data);
+
+
+
     // generuojame turini
     let HTML = '';
     for (let i = 0; i < data.length; i++) {
