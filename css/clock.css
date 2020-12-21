@@ -1,34 +1,34 @@
 .clock {
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     grid-template-columns: repeat(4, 1fr);
     row-gap: 30px;
-    column-gap: 0px;
 }
-
-.clock > .time {
-    display: inline-block;
-    width: 25%;
-    float: left;
-}
-.clock > .time > .value {
-    display: inline-block;
-    width: 100%;
-    font-size: 40px;
-    line-height: 40px;
-}
-.clock > .time > .label {
-    display: inline-block;
-    width: 100%;
-    font-size: 16px;
-    line-height: 20px;
-}
+    .clock > .time {
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+    }
+        .clock > .time > .value {
+            display: inline-block;
+            width: 100%;
+            font-size: 50px;
+            line-height: 50px;
+            font-family: 'Raleway', sans-serif;
+        }
+        .clock > .time > .label {
+            display: inline-block;
+            width: 100%;
+            font-size: 12px;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
 
 @media (max-width: 640px) {
     .clock {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media (max-width: 320px) {
     .clock {
         grid-template-columns: 1fr;

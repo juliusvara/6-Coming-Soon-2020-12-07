@@ -1,20 +1,35 @@
-import {isValidInput} from 'C:\Users\laiks\Desktop\BIT\6 Coming Soon 2020-12-07\js\components\socials\isValidInput.js';
+import { isValidInput } from "./isValidInput.js";
+import { isValidSocialItem } from "./isValidSocialItem.js";
 
-function renderSocials (selector, data) {
- console.log('dasdasdas');
+function renderSocials(selector, data) {
+    // input validation
+    if (!isValidInput(selector, data)) {
+        return false;
+    }
 
-//input validation
-if (is isValidInput(selector, data)) {
-    return;
+    const DOM = document.querySelector(selector);
+    if (!DOM) {
+        return false;
+    }
+
+    // logic
+    let HTML = '';
+
+    for (let item of data) {
+        if (!isValidSocialItem(item)) {
+            continue;
+        }
+        HTML += `<a href="${item.href}" target="_blank" class="fa fa-${item.icon}"></a>`;
+    }
+
+    // post logic validation
+    if (HTML === '') {
+        return false;
+    }
+
+    // return result
+    DOM.innerHTML = HTML;
+    return true;
 }
 
-cosnt DOM =document.querySelector(selector);
-if (!DOM) {
-    return false;
-}
-
-
-}
-
-
-export {renderSocials}
+export { renderSocials }
