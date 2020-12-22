@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    line-height: 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    color: white;
+    opacity: 0.9;
+    box-shadow: 0 2px 4px #0004;
+}
+    .btn:hover {
+        box-shadow: 0 2px 4px #0009;
+        opacity: 1;
+    }
+
+    .btn.btn-succes {
+        background-color: green;
+        color: white;
+    }

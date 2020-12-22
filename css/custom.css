@@ -39,6 +39,7 @@
             margin-bottom: var(--big-gap);
         }
         .hero .form {
+            width: 80%;
             margin-bottom: var(--gap);
         }
 
@@ -63,6 +64,7 @@ main p {
         main p > a:hover {
             text-decoration: underline;
         }
+    
 
 /* footer */
 footer.container {
@@ -126,4 +128,12 @@ footer.container {
         footer p > span + span::before {
             display: none;
         }
+}
+@media (min-width: 1200px) {
+    main .from > .input {
+        width: 47%;
+    }
+    main .from > .input + .input {
+        margin-left: 40%;
+    }
 }
